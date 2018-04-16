@@ -44,3 +44,8 @@ sudo rm -R /home/drivera/Descargas/LibreOffice_6.0.3.2_Linux_x86-64_deb*
 
 #install Other Apps
 sudo dpkg -i atom-amd64.deb gitkraken-amd64.deb mendeleydesktop_1.17.13-stable_amd64.deb
+
+#Batery Manager
+sudo add-apt-repository -y ppa:linrunner/tlp
+sudo apt-get -y update
+sudo apt-get install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
