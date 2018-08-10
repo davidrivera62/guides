@@ -26,6 +26,9 @@ sudo apt-get install -y variety-slideshow libbsapi policykit-1-fingerprint-gui
 sudo apt-get install -y fingerprint-gui grub-customizer neofetch
 sudo apt-get install -y papirus-icon-theme gedit
 
+# GitKraken in Ubuntu 18.04
+sudo apt-get install -y libgnome-keyring0
+
 #Purge Libre office
 sudo apt-get remove --purge libreoffice*
 sudo apt-get clean -y
