@@ -8,7 +8,7 @@ export PATH=$PATH:/home/drivera/anaconda3/bin:$PATH
 
 #instalacion librerias
 
-sudo apt install libssl-dev libssh2-1-dev libxml2-dev libcurl4-openssl-dev
+sudo apt install libssl-dev libssh2-1-dev libxml2-dev 
 sudo apt install build-essential python-dev default-jre default-jdk
 sudo apt install libcairo2-dev libjpeg62 zlib1g-dev libcurl4-gnutls-dev
 
