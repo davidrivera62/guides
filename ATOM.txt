@@ -1,0 +1,26 @@
+ATOM Customization for Python & R
+
+In terminal
+
+For Proxy, in terminal
+
+apm config set proxy "http://proxyune:8080"
+apm config set https_proxy proxy "http://proxyune:8080"
+
+apm install script file-icons minimap 
+conda install -c anaconda flake8
+conda install -c conda-forge autopep8
+
+Install Packages in Atom
+
+minimap-highlight-selected
+minimap-find-and-replace
+autocomplete python
+linter-flake8
+python-autopep8
+#gams Language
+atom-language-r
+autocomplete R
+
+
+
