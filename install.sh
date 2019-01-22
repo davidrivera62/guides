@@ -24,7 +24,7 @@ sudo apt-get install -y blueman menulibre git  dropbox spotify-client
 sudo apt-get install -y terminator evince ttf-mscorefonts-installer variety
 sudo apt-get install -y variety-slideshow libbsapi policykit-1-fingerprint-gui
 sudo apt-get install -y fingerprint-gui grub-customizer neofetch
-sudo apt-get install -y papirus-icon-theme gedit
+sudo apt-get install -y papirus-icon-theme gedit jabref
 
 # GitKraken in Ubuntu 18.04
 sudo apt-get install -y libgnome-keyring0
