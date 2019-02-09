@@ -8,7 +8,7 @@ export PATH=$PATH:/home/drivera/anaconda3/bin:$PATH
 
 #instalacion librerias
 
-sudo apt install libssl-dev libssh2-1-dev libxml2-dev 
+sudo apt install libssl-dev libssh2-1-dev libxml2-dev
 sudo apt install build-essential python-dev default-jre default-jdk
 sudo apt install libcairo2-dev libjpeg62 zlib1g-dev libcurl4-gnutls-dev
 
@@ -27,6 +27,8 @@ sudo apt install -y r-base r-base-dev
 
 #set all Java variables
 sudo R CMD javareconf
+
+sudo usermod -a -G staff your_user_name
 
 #Run R script IRkernel
 Rscript script-irkernel.R

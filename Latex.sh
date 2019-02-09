@@ -1,1 +1,4 @@
-sudo apt-get install texlive-full texstudio texstudio-l10n
+#texstudio repository
+sudo add-apt-repository -y ppa:sunderme/texstudio
+
+sudo apt-get install -y texlive-full texstudio
