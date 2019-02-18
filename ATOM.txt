@@ -7,12 +7,8 @@ For Proxy, in terminal
 apm config set proxy "http://proxyune:8080"
 apm config set https_proxy proxy "http://proxyune:8080"
 
-apm install atom-language-r autocomplete-R autocomplete-python file-icons 
-language-latex latex linter-flake8 minimap minimap-find-and-replace minimap-highlight-selected python-autopep8 script
+apm install atom-language-r autocomplete-R autocomplete-python file-icons language-latex latex linter-flake8 minimap minimap-find-and-replace minimap-highlight-selected python-autopep8 script
 
 Init Script
 
 process.env.PATH = ['/Users/xxx/anaconda/bin/', process.env.PATH].join(':')
-
-
-
