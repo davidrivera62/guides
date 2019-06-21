@@ -53,3 +53,6 @@ sudo apt-get install -y papirus-icon-theme gedit libgnome-keyring0
 #sudo add-apt-repository -y ppa:linrunner/tlp
 #sudo apt-get -y update
 #sudo apt-get install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
+
+#Visual Studio Code
+# https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
