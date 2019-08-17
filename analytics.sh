@@ -8,7 +8,7 @@
 
 #instalacion librerias
 
-sudo apt-get install -y libzmq3-dev libcurl4-openssl-dev
+sudo apt-get install -y libzmq3-dev 
 sudo apt-get install -y libssl-dev libssh2-1-dev libxml2-dev
 sudo apt-get install -y build-essential python-dev default-jre default-jdk
 sudo apt-get install -y libcairo2-dev libjpeg62 zlib1g-dev libcurl4-gnutls-dev
