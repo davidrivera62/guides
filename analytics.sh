@@ -17,12 +17,12 @@ sudo apt-get install -y lib32gcc1 lib32stdc++6 libc6-i386 libclang-6.0-dev libcl
 
 #Add CRAN as repository
 
-sudo echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" | sudo tee -a /etc/apt/sources.list
+sudo echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/" | sudo tee -a /etc/apt/sources.list
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 
 #update
-sudo apt -y update
+sudo apt-get -y update
 
 #R Install
 sudo apt-get install -y r-base r-base-dev
