@@ -55,4 +55,7 @@ sudo apt-get install -y papirus-icon-theme gedit libgnome-keyring0
 #sudo apt-get install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
 
 #Visual Studio Code
-# https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
+# https://code.visualstudio.com/docs/setup/linux
+
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
