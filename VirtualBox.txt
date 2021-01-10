@@ -1,0 +1,7 @@
+Virtual Box Managing
+
+Problema al usar el adaptador sólo-anfitrión en VirtualBox instalado en Linux
+
+https://algodelinux.com/problema-al-usar-el-adaptador-solo-anfitrion-en-virtualbox-instalado-en-linux/
+
+https://www.techrepublic.com/article/how-to-run-virtualbox-virtual-machines-from-the-command-line/

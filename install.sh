@@ -15,6 +15,16 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 #Papirus repository
 sudo add-apt-repository -y ppa:papirus/papirus-dev
 
+#Bashtop repository
+sudo add-apt-repository -y ppa:bashtop-monitor/bashtop
+
+#Visual Studio Code
+# https://code.visualstudio.com/docs/setup/linux
+
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+
 #update
 sudo apt-get -y update
 
@@ -22,10 +32,11 @@ sudo apt-get -y update
 
 #sudo apt-get install -y  spotify-client libbsapi policykit-1-fingerprint-gui fingerprint-gui grub-customizer
 
+sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety papirus-icon-theme gedit libgnome-keyring0 spotify-client apt-transport-https 
 
-sudo apt-get install -y git dropbox neofetch jabref
-sudo apt-get install -y terminator evince ttf-mscorefonts-installer variety
-sudo apt-get install -y papirus-icon-theme gedit libgnome-keyring0
+sudo apt-get -y update
+
+sudo apt-get install -y vscode
 
 # GitKraken in Ubuntu 18.04 libgnome-keyring0
 
@@ -55,13 +66,6 @@ sudo apt-get install -y papirus-icon-theme gedit libgnome-keyring0
 #sudo apt-get install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
 
 #Visual Studio Code
-# https://code.visualstudio.com/docs/setup/linux
 
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install code # or code-insiders
 

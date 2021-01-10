@@ -47,3 +47,18 @@ sudo rm /etc/apt/preferences.d/nosnap.pref
 
 #MicroK8s
 
+sudo snap install microk8s --classic --channel=1.17/stable
+
+sudo usermod -a -G microk8s ${USER}
+
+rebot
+
+microk8s enable dashboard dns
+
+#microk8s disable dashboard dns
+
+microk8s.status
+
+alias microk8s.kubectl = "kubectl"
+
+alias kubectl="microk8s.kubectl"

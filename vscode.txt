@@ -1,0 +1,9 @@
+Plugins
+
+Docker Microsoft
+Jupyter Microsoft
+Python Microsoft
+Latex Workshop James Yu
+LTeX Julian Valentin (*)
+R Yuki Ueda
+YAML Red Hat
