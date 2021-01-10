@@ -18,6 +18,9 @@ sudo add-apt-repository -y ppa:papirus/papirus-dev
 #Bashtop repository
 sudo add-apt-repository -y ppa:bashtop-monitor/bashtop
 
+#slimbookbattery
+sudo add-apt-repository -y ppa:slimbook/slimbook
+
 #Visual Studio Code
 # https://code.visualstudio.com/docs/setup/linux
 
@@ -32,7 +35,7 @@ sudo apt-get -y update
 
 #sudo apt-get install -y  spotify-client libbsapi policykit-1-fingerprint-gui fingerprint-gui grub-customizer
 
-sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety papirus-icon-theme gedit libgnome-keyring0 spotify-client apt-transport-https 
+sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety papirus-icon-theme gedit libgnome-keyring0 spotify-client apt-transport-https slimbookbattery
 
 sudo apt-get -y update
 
