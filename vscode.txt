@@ -6,4 +6,5 @@ Python Microsoft
 Latex Workshop James Yu
 LTeX Julian Valentin (*)
 R Yuki Ueda
+R LSP Client REditor Support (*)
 YAML Red Hat
