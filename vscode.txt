@@ -8,3 +8,4 @@ LTeX Julian Valentin (*)
 R Yuki Ueda
 R LSP Client REditor Support (*)
 YAML Red Hat
+ident-rainbow oderwat
