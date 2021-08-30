@@ -35,21 +35,25 @@ sudo apt-get -y update
 
 #sudo apt-get install -y  spotify-client libbsapi policykit-1-fingerprint-gui fingerprint-gui grub-customizer
 
-sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety gedit spotify-client apt-transport-https slimbookbattery
+sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety gedit spotify-client apt-transport-https slimbookbattery code
 
 sudo apt-get -y update
 
 sudo apt-get install -y code
 
-# GitKraken in Ubuntu 18.04 libgnome-keyring0
+# GitKraken 
+
+flatpak install flathub com.axosoft.GitKraken
 
 
 #Purge Libre office
-#sudo apt-get remove --purge libreoffice*
-#sudo apt-get clean -y
-#sudo apt-get autoremove -y
+sudo apt-get remove --purge libreoffice*
+sudo apt-get clean -y
+sudo apt-get autoremove -y
 
-#install libreoffice
+install libreoffice
+
+flatpak install flathub org.libreoffice.LibreOffice
 
 #cd /home/drivera/Descargas
 #sudo tar xvfz LibreOffice_6.0.3_Linux_x86-64_deb.tar.gz

@@ -15,16 +15,16 @@ sudo perl install-tl
 
 nano .bashrc
 
-export PATH=$PATH:/usr/local/texlive/202X/bin/x86_64-linux
-export MANPATH=/usr/local/texlive/202X/texmf-dist/doc/man
-export INFOPATH=/usr/local/texlive/202X/texmf-dist/doc/info
+#export PATH=$PATH:/usr/local/texlive/2021/bin/x86_64-linux
+#export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man
+#export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info
 
 #texstudio repository
 sudo add-apt-repository -y ppa:sunderme/texstudio
 
 sudo apt update
 
-sudo apt-get install -y texstudio
+sudo apt-get --no-install-recommends install texstudio
 
 #Commands Path
 
