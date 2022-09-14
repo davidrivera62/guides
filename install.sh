@@ -35,7 +35,7 @@ sudo apt-get -y update
 
 #sudo apt-get install -y  spotify-client libbsapi policykit-1-fingerprint-gui fingerprint-gui grub-customizer
 
-sudo apt-get install -y git dropbox neofetch jabref bashtop terminator evince ttf-mscorefonts-installer variety gedit spotify-client apt-transport-https slimbookbattery code
+sudo apt-get install -y git dropbox neofetch bashtop terminator evince ttf-mscorefonts-installer variety gedit spotify-client apt-transport-https slimbookbattery code
 
 sudo apt-get -y update
 
@@ -51,7 +51,7 @@ sudo apt-get remove --purge libreoffice*
 sudo apt-get clean -y
 sudo apt-get autoremove -y
 
-install libreoffice
+#install libreoffice
 
 flatpak install flathub org.libreoffice.LibreOffice
 
