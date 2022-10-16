@@ -74,5 +74,14 @@ flatpak install flathub org.libreoffice.LibreOffice
 
 #Visual Studio Code
 
+#Demasiados archivos
+
+sudo vim /etc/security/limits.conf
+
+*         hard    nofile      500000
+*         soft    nofile      500000
+root      hard    nofile      500000
+root      soft    nofile      500000
+
 
 

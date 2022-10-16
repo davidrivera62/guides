@@ -20,7 +20,7 @@ set number
 set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-" set cursorcolumn
+set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -76,6 +76,9 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -93,6 +96,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'crusoexia/vim-monokai'
 
   Plug 'flazz/vim-colorschemes'
+
+  Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -161,6 +166,11 @@ nnoremap <F3> :NERDTreeToggle<cr>
 
 " Have nerdtree ignore certain files and directories.
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
+
+"Airline tabs
+nnoremap <c-n> :tabn<cr>
+nnoremap <c-p> :tabp<cr>
+
 
 " }}}
 
