@@ -14,6 +14,7 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #Clone the powerlevel10k theme repository
+#https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
