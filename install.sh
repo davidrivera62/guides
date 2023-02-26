@@ -35,11 +35,9 @@ sudo apt-get -y update
 
 #sudo apt-get install -y  spotify-client libbsapi policykit-1-fingerprint-gui fingerprint-gui grub-customizer
 
-sudo apt-get install -y git dropbox neofetch bashtop terminator evince ttf-mscorefonts-installer variety gedit spotify-client apt-transport-https slimbookbattery code
+sudo apt-get install -y git neofetch bashtop terminator evince ttf-mscorefonts-installer variety apt-transport-https code
 
 sudo apt-get -y update
-
-sudo apt-get install -y code
 
 # GitKraken 
 
@@ -83,5 +81,10 @@ sudo vim /etc/security/limits.conf
 root      hard    nofile      500000
 root      soft    nofile      500000
 
+# sudo nano /etc/gdm3/custom.conf
+# WaylandEnable=false
+
+sudo apt-get install -y libzmq3-dev libssl-dev libssh2-1-dev libxml2-dev build-essential default-jre default-jdk libcairo2-dev libjpeg62 zlib1g-dev libcurl4-gnutls-dev python3-dev 
+sudo apt-get install -y gnome-weather gnome-tweaks chrome-gnome-shell papirus-icon-theme
 
 
