@@ -75,6 +75,9 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+"corrector ortográfico
+setlocal spell spelllang=es
+
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -99,6 +102,8 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'tpope/vim-fugitive'
 
+  Plug 'lervag/vimtex'
+
 call plug#end()
 
 " }}}
@@ -109,7 +114,7 @@ call plug#end()
 " Mappings code goes here.
 
 " Set the backslash as the leader key.
-"let mapleader = "\"
+let mapleader = ","
 
 " Press \\ to jump back to the last cursor position.
 nnoremap <leader>\ ``
@@ -298,4 +303,30 @@ set laststatus=2
 
 " }}}
 
+" VimTex  ---------------------------------------------------------------- {{{
 
+" This is necessary for VimTeX to load properly. The "indent" is optional.
+" Note that most plugin managers will do this automatically.
+filetype plugin indent on
+
+" This enables Vim's and neovim's syntax-related features. Without this, some
+" VimTeX features will not work (see ":help vimtex-requirements" for more
+" info).
+syntax enable
+
+" Viewer options: One may configure the viewer either by specifying a built-in
+" viewer method:
+let g:vimtex_view_method = 'general'
+
+" VimTeX uses latexmk as the default compiler backend. If you use it, which is
+" strongly recommended, you probably don't need to configure anything. If you
+" want another compiler backend, you can change it as follows. The list of
+" supported backends and further explanation is provided in the documentation,
+" see ":help vimtex-compiler".
+let g:vimtex_compiler_method = 'latexmk'
+
+" Most VimTeX mappings rely on localleader and this can be changed with the
+" following line. The default is usually fine and is the symbol "\".
+let maplocalleader = "."
+
+ " }}

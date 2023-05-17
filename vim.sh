@@ -17,3 +17,17 @@ sudo apt-get install fonts-powerline
 #vim-airline-themes: Already instal|~                                      
 #nerdtree: Already installed       |~                                      
 #vim-colorschemes: Already installe
+
+#Spelling
+# https://atareao.es/tutorial/vim/el-corrector-ortografico-en-vim/
+
+mkdir -p ~/.vim/spell
+cd ~/.vim/spell
+wget --no-check-certificate https://ftp.vim.org/vim/runtime/spell/es.latin1.spl
+wget --no-check-certificate https://ftp.vim.org/vim/runtime/spell/es.latin1.sug
+wget --no-check-certificate https://ftp.vim.org/vim/runtime/spell/es.utf-8.spl
+wget --no-check-certificate https://ftp.vim.org/vim/runtime/spell/es.utf-8.sug
+
+#En vimrc
+#:setlocal spell spelllang=es
+
